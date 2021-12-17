@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-wisteria text-black-coffee dark:bg-french-violet dark:text-white;
+}
