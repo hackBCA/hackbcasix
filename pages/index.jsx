@@ -28,7 +28,6 @@ export default function Home() {
 
     return <>
         <Head>
-            <meta name="theme-color" content="#471777" media="(prefers-color-scheme: dark)" />
             <meta name="theme-color" content="#7A28CB" />
         </Head>
         <div
