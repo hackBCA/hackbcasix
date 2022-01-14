@@ -28,8 +28,8 @@ export default function Home() {
 
     return <>
         <Head>
-            <meta name="theme-color" content="#7A28CB" />
             <meta name="theme-color" content="#471777" media="(prefers-color-scheme: dark)" />
+            <meta name="theme-color" content="#7A28CB" />
         </Head>
         <div
             className="w-full h-screen text-white flex flex-col items-center justify-center text-center p-8 relative"
