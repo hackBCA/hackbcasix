@@ -42,7 +42,7 @@ export default function Home() {
             <p className="text-3xl">April 1-2, 2022</p>
             <p className="mt-8 italic">Updates soon.</p>
             <p className="mt-8">Want to sponsor us? Contact us at <a className="text-medium-turquoise-400 hover:underline" href="mailto:contact@hackbca.com">contact@hackbca.com</a>!</p>
-            <p className="mt-3 text-sm opacity-60"><a href="https://2020.hackbca.com" className="hover:underline">hackBCA V (2020) <FontAwesomeIcon icon={faExternalLinkAlt} /></a></p>
+            <p className="mt-3 text-sm opacity-60"><a href="https://v.hackbca.com" className="hover:underline">hackBCA V (2020) <FontAwesomeIcon icon={faExternalLinkAlt} /></a></p>
         </div>
     </>;
 }
