@@ -6,12 +6,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "medium-turquoise": "#55DDE0",
-        "black-coffee": "#30292F",
-        "brilliant-rose": "#FC60A8",
-        "french-violet": "#7A28CB",
-        "cyber-grape": "#494368",
-        "wisteria": "#CCAAEE",
+        "medium-turquoise": {
+          "400": "#55DDE0",
+        },
+        "brilliant-rose": {
+          "500": "#FC60A8",
+        },
+        "french-violet": {
+          "100": "#E3C7FF",
+          "400": "#A154EC",
+          "600": "#7A28CB",
+          "800": "#471777",
+          "1000": "#12081C",
+        },
       },
       fontSize: {
         ludicrous: "1000px",

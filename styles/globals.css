@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-    @apply bg-wisteria text-black-coffee dark:bg-french-violet dark:text-white;
+    @apply bg-white dark:bg-french-violet-1000 text-black dark:text-white;
 }
