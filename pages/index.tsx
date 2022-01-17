@@ -109,12 +109,16 @@ export default function Home() {
                                             "enable": true
                                         },
                                         "value": {
-                                            "min": 1,
+                                            "min": 4,
                                             "max": 5
                                         },
                                         "animation": {
-                                            "speed": 40,
-                                            "minimumValue": 0.1
+                                          startValue: "min",
+                                          enable: true,
+                                          minimumValue: 1,
+                                          speed: 200,
+                                          destroy: "none",
+                                          sync: true
                                         }
                                         
                                     }
@@ -168,6 +172,14 @@ export default function Home() {
                                                 "random": {
                                                     "enable": true,
                                                     "minimumValue": 5
+                                                },
+                                                "animation": {
+                                                  startValue: "min",
+                                                  enable: true,
+                                                  minimumValue: 1,
+                                                  speed: 100,
+                                                  destroy: "none",
+                                                  sync: true
                                                 }
                                             },
                                             "move": {
@@ -190,7 +202,7 @@ export default function Home() {
                                             }
                                         },
                                         "position": {
-                                            "x": 56.5,
+                                            "x": 57.5,
                                             "y": 60,
                                         }
                                     }
@@ -204,7 +216,8 @@ export default function Home() {
             <p className="text-3xl">April 1-2, 2022</p>
             <p className="mt-8 italic">Updates soon.</p>
             <p className="mt-8">Want to sponsor us? Contact us at <a className="text-medium-turquoise-400 hover:underline" href="mailto:contact@hackbca.com">contact@hackbca.com</a>!</p>
-            <p className="mt-3 text-sm opacity-60"><a href="https://v.hackbca.com" className="hover:underline">hackBCA V (2020) <FontAwesomeIcon icon={faExternalLinkAlt} /></a></p>
+            <p className="mt-3 text-sm opacity-70"><a href="https://v.hackbca.com" className="hover:underline">hackBCA V (2020) <FontAwesomeIcon icon={faExternalLinkAlt} /></a></p>
+            <p className="text-sm mt-3 opacity-70">Logo by Galadriel Cho. Animation by <a className="hover:underline" href="https://github.com/Blckbrry-Pi">Skyler Calaman <FontAwesomeIcon icon={faExternalLinkAlt} /></a>.</p>
         </div>
     </>;
 }
