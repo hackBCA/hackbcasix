@@ -25,7 +25,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Asap", "ui-sans-serif", "system-ui", "sans-serif"],
-      }
+      },
     },
   },
   plugins: [],
