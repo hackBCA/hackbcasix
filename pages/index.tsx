@@ -196,7 +196,7 @@ export default function Home() {
                                                 },
                                                 angle: {
                                                     offset: -10,
-                                                    value: -40
+                                                    value: 30,
                                                 },
                                                 decay: 0.03,
                                             }
@@ -213,7 +213,7 @@ export default function Home() {
                 </div>
             </div>
             <h1 className="sm:text-7xl text-6xl font-semibold italic">hackBCA VI</h1>
-            <p className="text-3xl">April 1-2, 2022</p>
+            <p className="text-3xl"><span className="font-semibold">Soaring to new heights.</span> April 1-2, 2022.</p>
             <p className="mt-8 italic">Updates soon.</p>
             <p className="mt-8">Want to sponsor us? Contact us at <a className="text-medium-turquoise-400 hover:underline" href="mailto:contact@hackbca.com">contact@hackbca.com</a>!</p>
             <p className="mt-3 text-sm opacity-70"><a href="https://v.hackbca.com" className="hover:underline">hackBCA V (2020) <FontAwesomeIcon icon={faExternalLinkAlt} /></a></p>
