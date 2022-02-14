@@ -7,6 +7,7 @@ export function Footer() {
             <div>
                 <div className="font-semibold">&copy; 2022 The hackBCA Team</div>
                 <div className="mb-2"><a href="https://www.instagram.com/hackbca/" rel="noreferrer" target="_blank" className="text-medium-turquoise-400 hover:opacity-70 underline transition-opacity">Instagram</a> • <a href="https://github.com/hackBCA" className="text-medium-turquoise-400 hover:opacity-70 underline transition-opacity">GitHub</a></div>
+                <div className="mb-2"><a href="https://v.hackbca.com" className="text-medium-turquoise-400 hover:opacity-70 underline transition-opacity">hackBCA V (2020)</a></div>
                 <div>Logo by Galadriel Cho.</div>
                 <div>Logo animation by <a href="https://github.com/Blckbrry-Pi" target="_blank" rel="noreferrer" className="text-medium-turquoise-400 hover:opacity-70 underline transition-opacity">Skyler Calaman</a>.</div>
             </div>
