@@ -15,7 +15,7 @@ export function Navbar() {
         return () => window.removeEventListener("scroll", onScroll);
     }, []);
 
-    return <header className={`w-full fixed z-10 top-0 left-0 right-0 hidden sm:flex items-center transition-all border-white/0 ${isPageAtTop ? "" : "bg-french-violet-600/90 dark:bg-french-violet-800/70 backdrop-blur-md border-b border-white/10"}`}>
+    return <header className={`w-full fixed z-10 top-0 left-0 right-0 hidden sm:flex items-center transition-all ${isPageAtTop ? "border-white/0" : "bg-french-violet-600/90 dark:bg-french-violet-800/70 backdrop-blur-md border-b border-white/10"}`}>
         <a href="#" className={`transition-opacity flex items-center pl-4 text-white ${isPageAtTop ? "opacity-0" : "opacity-100 hover:opacity-70"}`}>
             <Logo className="h-10 mr-2" />
             <div className="text-2xl font-semibold italic">hackBCA VI</div>
