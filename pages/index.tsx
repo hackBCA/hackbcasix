@@ -120,8 +120,11 @@ export default function Home() {
                 <p className="mb-2">
                     You'll also need to bring a completed copy of the <a href="https://drive.google.com/file/d/1HYPViRgH-3aj7yfKaY9g3RVCXAdyjSAH/view?usp=sharing" target="_blank" rel="noreferrer" className="text-french-violet-600 dark:text-medium-turquoise-400 hover:opacity-70 transition-opacity underline">Permission Slip and Waiver</a> and <a href="https://drive.google.com/file/d/1HZzcTzqAFUx7GMeGcOrs8I3FqxQ6keHD/view" target="_blank" rel="noreferrer" className="text-french-violet-600 dark:text-medium-turquoise-400 hover:opacity-70 transition-opacity underline">Emergency Contact Form</a> to Room 138.
                 </p>
-                <p className="mb-8">
+                <p className="mb-2">
                     Registration closes when we fill or on March 15 (whichever is earlier), so act quick!
+                </p>
+                <p className="mb-8">
+                    <strong>Do you have little or no coding experience?</strong> No worries! Don't register yet - instead, if you are interested in attending hackBCA as a rookie, please complete <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4m8enfeVOz6OYym_ejDk6EAluOuew0aieepeTVfCGo5dC9g/viewform" className="text-french-violet-600 dark:text-medium-turquoise-400 hover:opacity-70 transition-opacity underline">this form</a>. If there is enough interest, we will create a "beginners track."
                 </p>
                 <h3 className="text-2xl font-semibold mb-2">Out-of-District Students</h3>
                 <p>Stay tuned for details on how to register.</p>         
