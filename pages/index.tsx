@@ -127,7 +127,7 @@ export default function Home() {
                     <strong>Do you have little or no coding experience?</strong> No worries! Don't register yet - instead, if you are interested in attending hackBCA as a rookie, please complete <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4m8enfeVOz6OYym_ejDk6EAluOuew0aieepeTVfCGo5dC9g/viewform" className="text-french-violet-600 dark:text-medium-turquoise-400 hover:opacity-70 transition-opacity underline">this form</a>. If there is enough interest, we will create a "beginners track."
                 </p>
                 <h3 className="text-2xl font-semibold mb-2">Out-of-District Students</h3>
-                <p>Stay tuned for details on how to register.</p>         
+                <p>Contact <a href="mailto:bryres@bergen.org" className="text-french-violet-600 dark:text-medium-turquoise-400 hover:opacity-70 transition-opacity underline">Bryan Respass (bryres@bergen.org)</a> if you're interested in attending as an out-of-district student.</p>         
             </div>
         </Section>
         <Divider />
