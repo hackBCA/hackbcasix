@@ -1,0 +1,153 @@
+# Workshops
+-
+  type: workshop
+  name: Intro to Web Dev (HTML and CSS)
+  presenter: Skyler Calaman
+  description: |
+    HTML and CSS are the foundations of the Internet that we know and love. Learn how to create your own websites with these technologies. This is our beginner workshop – If you have no coding experience, please attend!
+  beginner: true
+  start: 2022-04-01T17:30:00-04:00
+  end: 2022-04-01T18:30:00-04:00
+-
+  type: workshop
+  name: Intro to Git
+  presenter: Edward Feng
+  description: |
+    Git is a widely-used version control system, allowing for teams to collaborate and keep track of source code. You will learn how to use it, alongside some best practices for dealing with version control. If you have no prior experience with Git, this workshop is highly recommended.
+  start: 2022-04-01T17:30:00-04:00
+  end: 2022-04-01T18:30:00-04:00
+-
+  type: workshop
+  name: Create Your Own Cryptocurrency
+  presenter: Gabriel Ashkenazi
+  description: |
+    Make your own fake internet money! (Make sure that you are beyond the stage of “hello world” to take this workshop, as this is not a beginner workshop)
+  start: 2022-04-01T17:30:00-04:00
+  end: 2022-04-01T18:30:00-04:00
+-
+  type: workshop
+  name: ATICS in 15 Minutes
+  presenter: Anthony Li
+  description: |
+    Learn everything^λ^ you need to know from BCA's legendary junior computer science class in 15 minutes, from someone not qualified to teach everything you need to know from BCA's legendary junior computer science class in 15 minutes! Copious amounts of parentheses included for free!
+    
+    ^λ^ Terms and conditions apply. Workshop may or may not actually cover everything you need to know. If you experience any side effects after partaking in this workshop, seek medical attention immediately.
+  start: 2022-04-02T09:30:00-04:00
+  end: 2022-04-02T09:50:00-04:00
+-
+  type: workshop
+  name: Make Your Own Discord Bot
+  presenter: Shay Mor
+  description: |
+    Ever wanted to learn how to make your own Discord bots? Come join us at the Making Tic-Tac-Toe Using Discord.js workshop where you will be making your own working Tic-Tac-Toe game. Please make sure you have Node.js and an IDE installed on your computer along with a working Discord account.
+  start: 2022-04-02T10:00:00-04:00
+  end: 2022-04-02T11:00:00-04:00
+-
+  type: workshop
+  name: Minecraft with Python
+  presenter: Lance Bae
+  description: |
+    In this workshop, we'll code Minecraft using Python! We'll automate some builds and make some cool things like fractals! Make sure you have Minecraft, Python, and Java before joining.
+  start: 2022-04-02T10:00:00-04:00
+  end: 2022-04-02T11:00:00-04:00
+-
+  type: workshop
+  name: Advanced Web Dev (JS)
+  presenter: Tal Ledeniov
+  description: |
+    Learn how to make your website more interactive using JS. This course requires basic web development skills, so you may want to attend the Intro to Web Dev workshop if you have no prior experience.
+  start: 2022-04-02T11:00:00-04:00
+  end: 2022-04-02T12:00:00-04:00
+
+# Activities
+-
+  type: activity
+  name: PowerPoint Karaoke
+  description: |
+    Are you ready to synergize your business processes for optimal interplay between your development and sales teams?
+    Do you not even know what that means? Either way, come give an inspiring presentation (on a topic you have never seen before.)
+  start: 2022-04-01T18:30:00-04:00
+  end: 2022-04-01T19:30:00-04:00
+-
+  type: activity
+  name: Cup Stacking 🥤
+  description: |
+    The time-honored hackBCA tradition continues.
+
+    Stack cups as high as you can. Lead your team to victory and the Cup Stacking Prize. Try to overlook the red Solo cups littered everywhere.
+  start: 2022-04-01T20:00:00-04:00
+  end: 2022-04-01T21:00:00-04:00
+  location: Upper Caf
+
+# Meals, Ceremonies, Misc
+-
+  type: misc
+  name: Check-in
+  start: 2022-04-01T16:10:00-04:00
+  location: Upper Caf
+-
+  type: ceremony
+  name: Opening Ceremony
+  start: 2022-04-01T16:30:00-04:00
+  location: Upper Caf
+-
+  type: misc
+  name: Hacking begins
+  start: 2022-04-01T17:00:00-04:00
+-
+  type: meal
+  name: Dinner (Group A)
+  start: 2022-04-01T18:30:00-04:00
+  end: 2022-04-01T19:00:00-04:00
+  location: Upper Caf
+-
+  type: meal
+  name: Dinner (Group B)
+  start: 2022-04-01T19:00:00-04:00
+  end: 2022-04-01T19:30:00-04:00
+  location: Upper Caf
+-
+  type: meal
+  name: (Close-to) Midnight Pizza
+  start: 2022-04-01T21:00:00-04:00
+-
+  type: misc
+  name: Clean-up
+  start: 2022-04-01T21:45:00-04:00
+-
+  type: misc
+  name: Departure
+  start: 2022-04-01T22:00:00-04:00
+-
+  type: misc
+  name: Check-in
+  start: 2022-04-02T09:00:00-04:00
+  location: Commons
+-
+  type: meal
+  name: Lunch (Group A)
+  start: 2022-04-02T12:00:00-04:00
+  location: Upper Caf
+-
+  type: meal
+  name: Lunch (Group B)
+  start: 2022-04-02T12:30:00-04:00
+  location: Upper Caf
+-
+  type: misc
+  name: Projects due
+  start: 2022-04-02T15:45:00-04:00
+-
+  type: misc
+  name: Judging
+  start: 2022-04-02T16:00:00-04:00
+  location: Upper Caf
+-
+  type: ceremony
+  name: Closing Ceremony
+  start: 2022-04-02T17:00:00-04:00
+  location: Upper Caf
+-
+  type: misc
+  name: Departure
+  start: 2022-04-02T17:30:00-04:00

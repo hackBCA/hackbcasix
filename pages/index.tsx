@@ -4,8 +4,9 @@ import { Navbar } from "components/Navbar";
 import { Section } from "components/Section";
 import { Footer } from "components/Footer";
 import { Intro } from "components/homepage/Intro";
-import { Schedule } from "components/homepage/Schedule";
-import { Register } from "components/homepage/Register";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 function Divider() {
     return <hr className="w-full max-w-screen-lg mx-auto border-french-violet-100 dark:border-french-violet-800" />;
@@ -16,16 +17,19 @@ export default function Home() {
         <Head>
             <meta name="theme-color" content="#7A28CB" />
         </Head>
-        <Navbar />
+        <Navbar hidesAtTop={true} />
         <HeroHeader />
         <Intro />
         <Divider />
-        <Schedule />
-        <Divider />
-        <Register />
-        <Divider />
-        <Section id="faq" title="FAQ">
-            <div className="text-center text-xl italic">Coming soon!</div>
+        <Section id="schedule" title="Schedule">
+            <div className="flex items-center justify-center">
+                <Link href="/schedule">
+                    <a className="px-6 text-lg py-3 rounded-full bg-medium-turquoise-400 text-black hover:bg-brilliant-rose-500 transition-colors">
+                        View schedule
+                        <FontAwesomeIcon className="ml-3" icon={faArrowRight} />
+                    </a>
+                </Link>
+            </div>
         </Section>
         <Footer />
     </>;
