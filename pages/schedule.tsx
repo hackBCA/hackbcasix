@@ -54,7 +54,7 @@ function ScheduleEntryDisplay({entry, onSelect, date}: {entry: ScheduleEntry, on
                     <div className={`pointer-events-none absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent ${happeningNow ? "via-brilliant-rose-300/0 to-brilliant-rose-300" : "via-white/0 to-white/100 dark:via-french-violet-800/0 dark:to-french-violet-800"}`}></div>
             </div>}
             <div className="grow" />
-            <div className="flex justify-center">
+            <div className="flex items-center">
                 <div className="grow mr-3">
                     {entry.location && <div><FontAwesomeIcon icon={faMapMarkerAlt} /> {entry.location}</div>}
                     {entry.presenter && <div className="opacity-70"><FontAwesomeIcon icon={faUser} /> {entry.presenter}</div>}
