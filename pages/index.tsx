@@ -21,11 +21,17 @@ export default function Home() {
         <HeroHeader />
         <Intro />
         <Divider />
-        <Section id="schedule" title="Schedule">
-            <div className="flex items-center justify-center">
+        <Section id="schedule">
+            <div className="flex flex-col items-center justify-center">
                 <Link href="/schedule">
-                    <a className="px-6 text-lg py-3 rounded-full bg-medium-turquoise-400 text-black hover:bg-brilliant-rose-500 transition-colors">
+                    <a className="px-6 mb-3 text-lg py-3 rounded-full bg-medium-turquoise-400 text-black hover:bg-brilliant-rose-500 transition-colors">
                         View schedule
+                        <FontAwesomeIcon className="ml-3" icon={faArrowRight} />
+                    </a>
+                </Link>
+                <Link href="/prizes">
+                    <a className="px-6 text-lg py-3 rounded-full bg-medium-turquoise-400 text-black hover:bg-brilliant-rose-500 transition-colors">
+                        View prizes &amp; categories
                         <FontAwesomeIcon className="ml-3" icon={faArrowRight} />
                     </a>
                 </Link>

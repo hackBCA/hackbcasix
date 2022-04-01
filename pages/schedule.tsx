@@ -33,7 +33,7 @@ function ScheduleEntryDisplay({entry, onSelect, date}: {entry: ScheduleEntry, on
         More <FontAwesomeIcon icon={faChevronCircleRight} />
     </a>
 
-    return <div className={`${happeningNow ? "bg-brilliant-rose-300 text-black" : "bg-white dark:bg-french-violet-800"} rounded-lg shadow-lg p-4 ${isRow ? "md:col-span-2" : ""} ${isPast ? "opacity-60" : ""}`}>
+    return <div className={`${happeningNow ? "bg-brilliant-rose-300 text-black" : "bg-white dark:bg-french-violet-800"} rounded-lg shadow-lg p-4 ${isRow ? "md:col-span-2" : ""} ${isPast ? "opacity-40" : ""}`}>
         {isRow ? <div className="flex justify-center">
             <h4 className="font-bold">{entry.name}</h4>
             <span className="grow ml-4" />

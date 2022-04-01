@@ -24,13 +24,14 @@ export function Navbar({hidesAtTop}: {hidesAtTop: boolean}) {
         <Link href="/">
             <a className={`transition-opacity flex items-center pl-4 text-white ${isPageAtTop ? "opacity-0" : "opacity-100 hover:opacity-70"}`}>
                 <Logo className="h-10 mr-2" />
-                <div className="text-2xl font-semibold italic">hackBCA VI</div>
+                <div className="text-2xl font-semibold italic hidden sm:block">hackBCA VI</div>
             </a>
         </Link>
         <span className="flex-grow" />
         <div className="flex items-center justify-between py-2 pr-4 text-lg text-white/70">
             <Link href="/"><a className="mr-4 sm:inline hidden hover:text-white transition-colors">Home</a></Link>
             <Link href="/schedule"><a className="mr-4 hover:text-white transition-colors">Schedule</a></Link>
+            <Link href="/prizes"><a className="hover:text-white transition-colors">Prizes</a></Link>
         </div>
     </header>
 }
