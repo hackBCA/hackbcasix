@@ -9,3 +9,7 @@ html {
 body {
     @apply bg-white dark:bg-french-violet-1000 text-french-violet-1000 dark:text-white;
 }
+
+.description p:not(:last-child) {
+    margin-bottom: 1rem;
+}
