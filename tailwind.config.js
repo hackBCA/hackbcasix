@@ -10,6 +10,7 @@ module.exports = {
           "400": "#55DDE0",
         },
         "brilliant-rose": {
+          "300": "#FF8FC3",
           "500": "#FC60A8",
         },
         "french-violet": {

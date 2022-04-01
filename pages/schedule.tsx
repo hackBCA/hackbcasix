@@ -20,17 +20,20 @@ function BeginnerBadge() {
     return <div className="mb-3 px-2 py-1 text-black bg-medium-turquoise-400 w-fit rounded">Recommended for Beginners</div>
 }
 
-function ScheduleEntryDisplay({entry, onSelect}: {entry: ScheduleEntry, onSelect: () => void}) {
+function ScheduleEntryDisplay({entry, onSelect, date}: {entry: ScheduleEntry, onSelect: () => void, date: Date}) {
     const isRow = entry.type !== "workshop" && entry.type !== "activity";
+
+    const happeningNow = !!entry.end && date >= entry.start && date < entry.end;
+    const isPast = entry.end ? date > entry.end : date > entry.start;
 
     const moreButton = <a href="#" onClick={event => {
         event.preventDefault();
         onSelect();
-    }} role="button" className="text-brilliant-rose-500 dark:text-medium-turquoise-400 hover:underline">
+    }} role="button" className={`${happeningNow ? "text-french-violet-600" : "text-brilliant-rose-500 dark:text-medium-turquoise-400"} hover:underline`}>
         More <FontAwesomeIcon icon={faChevronCircleRight} />
     </a>
 
-    return <div className={`bg-white dark:bg-french-violet-800 rounded-lg shadow-lg p-4 ${isRow ? "md:col-span-2" : ""}`}>
+    return <div className={`${happeningNow ? "bg-brilliant-rose-300 text-black" : "bg-white dark:bg-french-violet-800"} rounded-lg shadow-lg p-4 ${isRow ? "md:col-span-2" : ""} ${isPast ? "opacity-60" : ""}`}>
         {isRow ? <div className="flex justify-center">
             <h4 className="font-bold">{entry.name}</h4>
             <span className="grow ml-4" />
@@ -48,7 +51,7 @@ function ScheduleEntryDisplay({entry, onSelect}: {entry: ScheduleEntry, onSelect
             {entry.description && <div className="h-40 overflow-hidden relative mb-2">
                 {entry.beginner && <BeginnerBadge />}
                 <ReactMarkdown className="description">{entry.description}</ReactMarkdown>
-                <div className="pointer-events-none absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent via-white/0 to-white/100 dark:via-french-violet-800/0 dark:to-french-violet-800"></div>
+                    <div className={`pointer-events-none absolute left-0 right-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent ${happeningNow ? "via-brilliant-rose-300/0 to-brilliant-rose-300" : "via-white/0 to-white/100 dark:via-french-violet-800/0 dark:to-french-violet-800"}`}></div>
             </div>}
             <div className="grow" />
             <div className="flex justify-center">
@@ -62,14 +65,14 @@ function ScheduleEntryDisplay({entry, onSelect}: {entry: ScheduleEntry, onSelect
     </div>;
 }
 
-function ScheduleDay({entries, setSelected}: {entries: ScheduleEntry[][], setSelected: (entry: ScheduleEntry) => void}) {
+function ScheduleDay({entries, setSelected, date}: {entries: ScheduleEntry[][], setSelected: (entry: ScheduleEntry) => void, date: Date}) {
     // The entries are grouped by start time.
     // For each start time, output the time and a list of entries.
     return <div className="mt-2">
         {entries.map(entriesForTime => {
             // Sort this group so that workshops and activities appear last.
 
-            const sortedEntries = entriesForTime.sort(
+            const sortedEntries = [...entriesForTime].sort(
                 (a, b) => {
                     const aAppearsLast = a.type === "workshop" || a.type === "activity";
                     const bAppearsLast = b.type === "workshop" || b.type === "activity";
@@ -88,8 +91,8 @@ function ScheduleDay({entries, setSelected}: {entries: ScheduleEntry[][], setSel
                     {DateTime.fromJSDate(entriesForTime[0].start, {zone}).toFormat("HH:mm")}
                 </h3>
                 <div className="grow grid grid-cols-1 md:grid-cols-2 gap-3">
-                    {entriesForTime.map(entry => {
-                        return <ScheduleEntryDisplay key={entry.name} entry={entry} onSelect={() => setSelected(entry)} />;
+                    {sortedEntries.map(entry => {
+                        return <ScheduleEntryDisplay key={entry.name} entry={entry} onSelect={() => setSelected(entry)} date={date} />;
                     })}
                 </div>
             </div>;
@@ -127,6 +130,7 @@ export default function Schedule() {
 
     const [entry, setSelectedEntry] = useState<ScheduleEntry | null>(null);
     const [isModalOpen, setModalOpen] = useState(false);
+    const [date] = useState(new Date());
 
     const setSelected = (entry: ScheduleEntry) => {
         setSelectedEntry(entry);
@@ -139,10 +143,10 @@ export default function Schedule() {
         <div className="bg-french-violet-100 dark:bg-french-violet-1000">
             <h1 className="text-5xl font-semibold italic text-center pt-24 mb-6">Schedule</h1>
             <Section title="Friday, April 1">
-                <ScheduleDay entries={day1} setSelected={setSelected} />
+                <ScheduleDay entries={day1} setSelected={setSelected} date={date} />
             </Section>
             <Section title="Saturday, April 2">
-                <ScheduleDay entries={day2} setSelected={setSelected} />
+                <ScheduleDay entries={day2} setSelected={setSelected} date={date} />
             </Section>
         </div>
         <Transition show={isModalOpen} as={Fragment}>
