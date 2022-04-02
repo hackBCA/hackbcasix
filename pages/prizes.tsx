@@ -21,6 +21,8 @@ export default function Prizes() {
                 <Prize category="Best Web" detail="???" />
                 <Prize category="Best Mobile" detail="???" />
                 <Prize category="🌶️🌶️🌶️🌶️ Spiciest Project" detail="???" />
+                <Prize category="Cup Stacking Prize" detail="Team Maggie" />
+                <Prize category="Powerpoint Karaoke Prize" detail="???" />
             </ul>
         </Section>
         <Footer />
