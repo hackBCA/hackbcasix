@@ -10,7 +10,7 @@ import scheduleImported from "../schedule.yaml";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faChevronCircleRight, faMapLocation, faMapMarked, faMapMarker, faMapMarkerAlt, faPerson, faTimesCircle, faUser } from "@fortawesome/free-solid-svg-icons";
 import ReactMarkdown from "react-markdown";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 const schedule = scheduleImported as ScheduleEntry[];
 
@@ -130,7 +130,11 @@ export default function Schedule() {
 
     const [entry, setSelectedEntry] = useState<ScheduleEntry | null>(null);
     const [isModalOpen, setModalOpen] = useState(false);
-    const [date] = useState(new Date());
+    const [date, setDate] = useState(new Date(0));
+
+    useEffect(() => {
+        setDate(new Date());
+    }, []);
 
     const setSelected = (entry: ScheduleEntry) => {
         setSelectedEntry(entry);
