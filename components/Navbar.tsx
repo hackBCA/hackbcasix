@@ -31,7 +31,8 @@ export function Navbar({hidesAtTop}: {hidesAtTop: boolean}) {
         <div className="flex items-center justify-between py-2 pr-4 text-lg text-white/70">
             <Link href="/"><a className="mr-4 sm:inline hidden hover:text-white transition-colors">Home</a></Link>
             <Link href="/schedule"><a className="mr-4 hover:text-white transition-colors">Schedule</a></Link>
-            <Link href="/prizes"><a className="hover:text-white transition-colors">Prizes</a></Link>
+            <Link href="/prizes"><a className="mr-4 hover:text-white transition-colors">Prizes</a></Link>
+            <a href="https://hackbca-vi.devpost.com" className="hover:text-white transition-colors">Devpost</a>
         </div>
     </header>
 }
