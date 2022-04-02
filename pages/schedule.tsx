@@ -23,8 +23,10 @@ function BeginnerBadge() {
 function ScheduleEntryDisplay({entry, onSelect, date}: {entry: ScheduleEntry, onSelect: () => void, date: Date}) {
     const isRow = entry.type !== "workshop" && entry.type !== "activity";
 
-    const happeningNow = !!entry.end && date >= entry.start && date < entry.end;
-    const isPast = entry.end ? date > entry.end : date > entry.start;
+    // const happeningNow = !!entry.end && date >= entry.start && date < entry.end;
+    // const isPast = entry.end ? date > entry.end : date > entry.start;
+    const happeningNow = false;
+    const isPast = false;
 
     const moreButton = <a href="#" onClick={event => {
         event.preventDefault();

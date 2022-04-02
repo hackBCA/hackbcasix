@@ -40,5 +40,6 @@ export function HeroHeader() {
                 <p className="text-2xl">April 1-2, 2022.</p>
             </div>
         </div>
+        <div className="mt-16 text-lg">hackBCA is complete. Thanks for joining us!</div>
     </div>;
 }
